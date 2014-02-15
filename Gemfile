@@ -7,7 +7,12 @@ gem 'rails', '3.2.16'
 
 gem 'sqlite3'
 
-
+group :development do
+  gem 'sextant'
+  gem 'awesome_print'
+  gem 'hirb'
+end
+gem 'simple_form'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -19,6 +24,8 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
+
+gem 'devise'
 
 gem 'jquery-rails'
 

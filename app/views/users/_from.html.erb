@@ -1,0 +1,6 @@
+<%= simple_form_for cat do |f| %>
+  <%= f.input :name, hint: " * Cats with no names are not allowed" %>
+  <%= f.input :gender, as: :radio_buttons, collection: Cat::GENDERS %>
+  <%= f.input :bio, label: 'Biography', placeholder: 'Tell us about your cat, how you found it, what is it like?' %>
+  <%= f.submit "Save" %>
+<% end %>
