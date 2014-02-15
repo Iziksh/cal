@@ -1,14 +1,14 @@
-<h1>User list</h1>
+<h1>Employees list</h1>
 
 <table>
   <tr>
     <th>Id</th>
     <th>Username</th>
   </tr>
-  <% @users.each do |user| %>
+  <% @Employees.each do |i| %>
     <tr>
-      <td><%= user.id %></td>
-      <td><%= link_to(user.username, user) %></td>
+      <td><%= Employee.id %></td>
+      <td><%= link_to(i.username, i) %></td>
     </tr>
   <% end %>
 </table>

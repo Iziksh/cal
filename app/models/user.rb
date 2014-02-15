@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+ has_many :employees ,class_name: 'Employee',foreign_key: 'employee_id',primary_key: 'id'
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,

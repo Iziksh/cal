@@ -1,0 +1,17 @@
+<h1><%= @employee.username %> details:</h1>
+
+<table>
+  <tr>
+    <th>Username</th>
+    <td><%= @user.username %></td>
+  </tr>
+    <th>Factory</th>
+    <td><%= @user.factory %></td>
+  </tr>
+   <tr>
+    <th><% @user.employees do |i| %></th>
+    <td><%= link_to i, i %></td>
+    <% end %>
+  </tr>
+</table>
+<%= link_to "Edit your profile", edit_user_path(@user) %>

@@ -1,7 +1,9 @@
 Calendar::Application.routes.draw do
+  root :to =>'users#index'
   devise_for :users
   resources :users 
-  root :to => "home#index"
+  resources :employees
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
